@@ -1,0 +1,20 @@
+.logo-header {
+    width: 10%;
+    min-width: 50px;
+}
+
+.t-claro-1 {
+    color: var(--light-neutral-color-01);
+}
+.t-claro-2 {
+    color: var(--light-neutral-color-02);
+}
+
+.t-escuro-1 {
+    color: var(--dark-neutral-color-01);
+}
+
+.t-escuro-2 {
+    color: var(--dark-neutral-color-02);
+}
+

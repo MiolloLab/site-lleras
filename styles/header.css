@@ -1,0 +1,20 @@
+/* CSS válido: não usar aninhamento (Sass) em arquivos .css
+   Convertido de seletores aninhados para seletores compostos */
+
+#primary div {
+    display: flex;
+    justify-content: center;
+}
+
+#secondary {
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 16px;
+    font: var(--text-sm);
+    color: var(--light-neutral-color-01);
+}
