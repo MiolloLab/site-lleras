@@ -14,12 +14,16 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-cols-2-1 {
+    grid-template-columns: 2fr 1fr;
+}
+
 .gap-16 {
     gap: 16px;
 }
 
 .logo-header {
-    width: 10%;
+    width: 15%;
     min-width: 50px;
 }
 
@@ -38,4 +42,10 @@
     color: var(--dark-neutral-color-02);
 }
 
+.pad-line-48 {
+    padding-inline: 48px;
+}
 
+.pad-block-32 {
+    padding-block: 32px;
+}

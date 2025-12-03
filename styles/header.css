@@ -1,5 +1,6 @@
-/* CSS válido: não usar aninhamento (Sass) em arquivos .css
-   Convertido de seletores aninhados para seletores compostos */
+header {
+    margin-top: 32px;
+}
 
 #primary div {
     display: flex;
@@ -11,10 +12,11 @@
         display: flex;
         justify-content: space-around;
     }
-    
+
     text-transform: uppercase;
     text-decoration: none;
     margin-top: 16px;
     font: var(--text-sm);
-    color: var(--light-neutral-color-01);
+    color: var(--dark-neutral-color-01);
+    letter-spacing: 0.1em;
 }
