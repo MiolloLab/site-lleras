@@ -1,3 +1,23 @@
+.grid {
+    display: grid;
+}
+
+.grid-flow-cols {
+    grid-auto-flow: column;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
 .logo-header {
     width: 10%;
     min-width: 50px;
@@ -17,4 +37,5 @@
 .t-escuro-2 {
     color: var(--dark-neutral-color-02);
 }
+
 
