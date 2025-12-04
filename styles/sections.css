@@ -1,98 +1,24 @@
-.hero-1 {
-    margin-block: 40px;
-    img {
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        inset: 0;
-        left: 200px;
-        z-index: 0;
-    }
-
-    .video-background {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-  
-    .card {
-        border-radius: 8px;
-        position: relative;
-        overflow: hidden;
-
-        &::before {
-            content: "";
-            position:absolute;
-            inset: 0;
-            top: 50%;
-            background-image: linear-gradient(
-                180deg,
-                transparent 0%,
-                #1c1c1e 100%
-            );
-        }
-
-        figcaption {
-            position: absolute;
-            bottom: 0;
-
-            padding: 48px;
-
-            h2, button {
-                margin-top: 32px;
-            }
-            
-            div {
-                display: flex;
-                gap: 16px;
-            }
-
-            button {
-                background-color: var(--light-neutral-color-01);
-            }
-
-            button:hover {
-                background-color: var(--dark-neutral-color-01);
-                color: var(--light-neutral-color-01);
-            }
-
-            a {
-                font: var(--text-bt);
-            }
-
-            a:hover {
-                color: inherit;
-            }
-        }
-    }
+#sub-textos-top {
+    align-items: start;
 
 }
 
-
-#por-que-melhorar {
-    margin-block: 40px;
+#por-que-melhorar { 
     border-radius: 8px;
-
-    margin-block: 32px;
-
     background-color: var(--light-neutral-color-02);
-    height: 600px;
-    gap: 32px;
-
-    div {
-        align-self: center;
-
-        h2 {
-            margin-bottom: 16px;
-        }
-
-        p {
-            line-height: 160%;
-        }
-    }
 
     img {
-        width: 100%;
+        
+        object-fit: cover;
         border-radius: 8px;
     }
+
+    div:nth-child(3) {
+        align-self: end;
+    }
+
+    div:nth-child(4) {
+        align-self: end;
+    }
+
 }

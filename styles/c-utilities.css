@@ -1,0 +1,53 @@
+/* GAP */
+.gap-16 {
+    gap: 16px;
+}
+.gap-32 {
+    gap: 32px;
+}
+
+/* CORES */
+
+.t-claro-1 {
+    color: var(--light-neutral-color-01);
+}
+.t-claro-2 {
+    color: var(--light-neutral-color-02);
+}
+
+.t-escuro-1 {
+    color: var(--dark-neutral-color-01);
+}
+
+.t-escuro-2 {
+    color: var(--dark-neutral-color-02);
+}
+
+/* MARGIN */
+
+.margin-block-16 {
+    margin-block: 16px;
+}
+
+.margin-block-32 {
+    margin-block: 32px;
+}
+
+.margin-block-40 {
+    margin-block: 40px;
+}
+
+/* PADDING */
+
+.pad-line-48 {
+    padding-inline: 48px;
+}
+
+.pad-block-32 {
+    padding-block: 32px;
+}
+
+.pad-block-48 {
+    padding-block: 48px;
+}
+
