@@ -1,4 +1,5 @@
 .hero-1 {
+    margin-block: 40px;
     img {
         height: 100%;
         object-fit: cover;
@@ -13,9 +14,7 @@
         width: 100%;
         object-fit: cover;
     }
-
- 
-    
+  
     .card {
         border-radius: 8px;
         position: relative;
@@ -64,9 +63,36 @@
             a:hover {
                 color: inherit;
             }
-
-
         }
     }
 
+}
+
+
+#por-que-melhorar {
+    margin-block: 40px;
+    border-radius: 8px;
+
+    margin-block: 32px;
+
+    background-color: var(--light-neutral-color-02);
+    height: 600px;
+    gap: 32px;
+
+    div {
+        align-self: center;
+
+        h2 {
+            margin-bottom: 16px;
+        }
+
+        p {
+            line-height: 160%;
+        }
+    }
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+    }
 }
