@@ -1,4 +1,29 @@
 /* GRID */
+.teaser {
+    background-color: var(--light-neutral-color---);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+    img {
+        width: 30%;
+        height: auto;
+        min-width: 300px;
+        object-fit: contain;
+
+    }
+
+    h3 {
+        color: var(--dark-neutral-color-01);
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+}
+
+
 
 .grid {
     display: grid;
@@ -168,4 +193,31 @@
         background-color: rgb(255, 0, 85);
     }
 
+}
+
+/* ----------- RESPONVIVO ------------ */
+
+
+@media (max-width: 768px) {
+    .teaser {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* evita ocupar 100vh em telas pequenas */
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .teaser img {
+        width: 60%;
+        height: auto;
+        min-width: 150px; /* reduz min-width em dispositivos menores */
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    .teaser h3 {
+        text-align: center;
+        padding: 0 0.5rem;
+    }
 }
