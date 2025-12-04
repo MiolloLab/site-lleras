@@ -1,0 +1,8 @@
+#primary {
+    padding-block: 32px;
+    div{
+    display: flex;
+    justify-content: center;
+    }
+   
+}
