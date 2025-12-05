@@ -1,0 +1,50 @@
+footer {
+    background-color: var(--secondary-color);
+}
+
+img {
+    width: 120px;
+    object-fit: contain;
+}
+
+ul {
+    li {
+        font: var(--text-sm);
+    }
+
+}
+
+p {
+    font: var(--text-sm);
+}
+
+a {
+    font: var(--text-sm);
+}
+
+#footer-flex {
+    margin-top: 40px;
+    padding-block: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+#grp01 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#grp02 {
+    font: var(--text-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+#grp03 {
+    display: flex;
+    flex-direction: column;
+}
+

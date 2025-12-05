@@ -1,11 +1,20 @@
 #sub-textos-top {
     align-items: start;
 
+    p {
+        font: var(--text-copy);
+        padding-top: 8px;
+    }
+
 }
 
 #por-que-melhorar { 
     border-radius: 8px;
     background-color: var(--light-neutral-color-02);
+
+    p {
+        font: var(--text-copy);
+    }
 
     img {
         
