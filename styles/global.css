@@ -103,3 +103,17 @@ video {
 main {
     margin-top: 24px;
 }
+
+/* TAGS */
+.content-tag {
+    margin-bottom: 16px;
+    display: inline-block;
+    color: var(--dark-neutral-color-02);
+    font: var(--text-sm);
+    padding: 4px 12px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    
+}

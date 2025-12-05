@@ -23,6 +23,69 @@
     color: var(--dark-neutral-color-02);
 }
 
+.t-escuro-2 {
+    color: var(--dark-neutral-color-03);
+}
+
+.bc-claro-1 {
+    background-color: var(--light-neutral-color-01);
+}
+
+.bc-claro-2 {
+    background-color: var(--light-neutral-color-02);
+}
+
+.bc-escuro-1 {
+    background-color: var(--dark-neutral-color-01);
+}
+
+.bc-escuro-2 {
+    background-color: var(--dark-neutral-color-02);
+}
+
+.bc-brand {
+    background-color: var(--brand-color);
+}
+
+.bc-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bc-accent {
+    background-color: var(--accent-color);
+}
+
+/* TEXTOS  */
+.text-2xl {
+    font: var(--h1);
+}
+
+.text-xl {
+    font: var(--h2);
+}
+
+.text-lg {
+    font: var(--h3);
+}
+
+.text-copy {
+    font: var(--text-copy);
+}
+
+.text-sm {
+    font: var(--text-sm);
+}
+
+.wt-900 {
+    font-weight: 900;
+}
+
+.wt-600 {
+    font-weight: 600;
+}
+
+
+
 /* MARGIN */
 
 .margin-block-16 {
@@ -50,4 +113,7 @@
 .pad-block-48 {
     padding-block: 48px;
 }
+
+
+
 
