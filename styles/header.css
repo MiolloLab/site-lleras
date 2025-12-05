@@ -133,7 +133,7 @@ header {
     }
 
     #primary img {
-        max-width: 180px; /* Reduzir logo em mobile */
+        max-width: 280px; /* Aumentado para melhor visualização */
     }
 
     /* Menu escondido por padrão em mobile */
@@ -178,8 +178,12 @@ header {
         padding-inline: 16px; /* Menos padding em telas muito pequenas */
     }
 
-    #primary img {
-        max-width: 100px;
+    /* Forçar largura fixa em small mobile para maior legibilidade
+       - Usa selector mais específico e !important para sobrescrever .logo-header (width:15%) */
+    #primary img.logo-header {
+        /* width: 200px !important;
+        max-width: none !important;
+        height: auto !important; */
     }
 
     .hamburger-icon span {

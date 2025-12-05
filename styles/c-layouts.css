@@ -44,6 +44,11 @@
     grid-template-columns: 2fr 1fr;
 }
 
+.grid-cols-2-rows-3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
 
 .logo-header {
     width: 15%;
@@ -120,7 +125,7 @@
 
 }
 
-.grid-cols-2-rows-3{
+.grid-melhorar{
     display: grid;
     height: 100%;
     width: 100%;
@@ -142,10 +147,7 @@
 
     & > div {
         /* background-color: blue; */
-    }
-
-
-    
+    }   
 }
 
 .grid-cols-12 {
