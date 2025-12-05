@@ -1,12 +1,76 @@
+/* ====== HEADER BASE ====== */
 header {
     margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ====== PRIMARY NAV (Logo) ====== */
+#primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #primary div {
     display: flex;
     justify-content: center;
+    flex: 1;
+    min-width: 0;
 }
 
+#primary img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* ====== MENU TOGGLE (Checkbox Invisível) ====== */
+.menu-toggle {
+    display: none; /* Invisível, só controla estado */
+}
+
+/* ====== HAMBURGER ICON ====== */
+.hamburger-icon {
+    display: none; /* Escondido em desktop */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    padding: 8px;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-neutral-color-01);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+/* Animação do hambúrguer quando marcado (menu aberto) */
+#menu-toggle:checked ~ #primary .hamburger-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+#menu-toggle:checked ~ #primary .hamburger-icon span:nth-child(2) {
+    opacity: 0; /* Desaparece a linha do meio */
+}
+
+#menu-toggle:checked ~ #primary .hamburger-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Menu visível quando checkbox está marcado (IMPORTANTE para mobile) */
+#menu-toggle:checked ~ #secondary {
+    max-height: 500px !important;
+    margin-top: 16px !important;
+    border-bottom: solid 1px hsla(0, 0%, 100%, 0.1) !important;
+}
+
+
+
+
+/* ====== SECONDARY NAV (Menu) ====== */
 #secondary {
     text-transform: uppercase;
     text-decoration: none;
@@ -14,13 +78,120 @@ header {
     font: var(--text-sm);
     color: var(--dark-neutral-color-01);
     letter-spacing: 0.1em;
-
-    border: none; 
     border-bottom: solid 1px hsla(0, 0%, 100%, 0.1);
+}
 
-    ul {
-        display: flex;
-        justify-content: space-around;
+#secondary ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#secondary li {
+    transition: color 0.3s ease;
+}
+
+#secondary a {
+    display: block;
+    padding: 12px 8px;
+}
+
+#secondary a:hover {
+    color: var(--brand-color);
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+/* TABLETS e abaixo (1024px) */
+@media (max-width: 1024px) {
+    #secondary ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
+/* MOBILE (768px e abaixo) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
     }
 
+    #primary {
+        justify-content: space-between;
+    }
+
+    /* Mostrar hambúrguer */
+    .hamburger-icon {
+        display: flex;
+        order: 2; /* Logo fica à esquerda, hambúrguer à direita */
+    }
+
+    #primary div {
+        flex: 0;
+        justify-content: flex-start;
+        order: 1;
+    }
+
+    #primary img {
+        max-width: 180px; /* Reduzir logo em mobile */
+    }
+
+    /* Menu escondido por padrão em mobile */
+    #secondary {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        margin-top: 0;
+        border-bottom: none !important;
+        padding: 0 !important;
+    }
+
+    #secondary ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0;
+    }
+
+    #secondary li {
+        border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+        padding: 12px 0;
+    }
+
+    #secondary li:first-child {
+        border-top: none;
+    }
+
+    #secondary a {
+        padding: 8px 0;
+        display: block;
+    }
+
+    /* Garantir que menu abre ao marcar checkbox */
+    #menu-toggle:checked ~ #secondary {
+        max-height: 500px;
+    }
 }
+
+/* SMALL MOBILE (480px e abaixo) */
+@media (max-width: 480px) {
+    .container {
+        padding-inline: 16px; /* Menos padding em telas muito pequenas */
+    }
+
+    #primary img {
+        max-width: 100px;
+    }
+
+    .hamburger-icon span {
+        width: 22px;
+        height: 2.5px;
+    }
+
+    #secondary {
+        font: var(--text-copy); /* Fonte um pouco maior */
+    }
+}
+
+
+
+

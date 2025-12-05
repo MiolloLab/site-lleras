@@ -15,14 +15,28 @@
 
     <!-- Carregar fontes do Google Fonts -->    
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+
+    <script type="module" src="./scripts/index.js" defer></script>
 </head>
 <body>
+    <!-- Checkbox invisível: controla abertura/fechamento do menu -->
     <header class="container">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir/fechar menu">
+        
         <nav id="primary">
             <div>
                 <img class="logo-header" src="./assets/logo-lleras-horizontal.svg" alt="Logo da Lleras Comunicação">
             </div>
+            
+            <!-- Label que funciona como ícone do hambúrguer -->
+            <label for="menu-toggle" class="hamburger-icon" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </nav>
+        
+        <!-- Menu de navegação (mostrado/escondido conforme checkbox) -->
         <nav id="secondary" class="pad-block-32">
             <ul>
                 <li><a href="#inicio">Início</a></li>
