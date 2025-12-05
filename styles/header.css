@@ -8,15 +8,18 @@ header {
 }
 
 #secondary {
-    ul {
-        display: flex;
-        justify-content: space-around;
-    }
-
     text-transform: uppercase;
     text-decoration: none;
     margin-top: 16px;
     font: var(--text-sm);
     color: var(--dark-neutral-color-01);
     letter-spacing: 0.1em;
+
+    border: none; 
+    border-bottom: solid 1px var(--dark-neutral-color-01);
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
 }
