@@ -232,15 +232,18 @@
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+    
     #sub-textos-top {
         grid-template-columns: 1fr;
         gap: 16px;
     }
 
     #por-que-melhorar {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 24px;
+        text-align: center;
     }
 
     .grid-melhorar {
@@ -253,6 +256,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
         gap: 24px;
+        text-align: center;
     }
 
     #sobre-a-lleras :nth-child(1),
@@ -268,6 +272,7 @@
     #o-metodo {
         grid-template-columns: 1fr;
         gap: 24px;
+        text-align: center;
     }
 
     #o-metodo > div:nth-child(1),
@@ -276,6 +281,13 @@
     #o-metodo > div:nth-child(4) {
         grid-column: 1 / 2;
         grid-row: auto;
+    }
+    #o-metodo > div:nth-child(4) {
+        order: 3;
+    }
+
+    #o-metodo > div:nth-child(3) {
+        order: 4;
     }
 
     #text-card-hor {

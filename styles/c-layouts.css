@@ -62,7 +62,7 @@
         object-fit: cover;
         position: absolute;
         inset: 0;
-        left: 200px;
+        /* left: 200px; */
         z-index: 0;
     }
 
@@ -219,44 +219,64 @@
 
 @media (max-width: 768px) {
     .hero-1 .card {
-        min-height: 520px;
+        min-height: 300px; /* Reduzido para deixar mais flexível */
+        height: auto; /* Permite crescer com conteúdo */
     }
 
     .hero-1 .card::before {
         top: 40%;
     }
 
+    .card {
+        margin-inline: auto;
+        padding-inline: auto;
+    }
+
     .hero-1 .card figcaption {
         padding: 24px;
         text-align: center;
+        position: relative; /* Muda para relative para não ocupar altura fixa */
+        bottom: auto;
     }
 
-    .hero-1 .card figcaption h2,
-    .hero-1 .card figcaption div {
-        margin-top: 24px;
+    .hero-1 .card figcaption {
+        padding: 32px;
+        top: auto;
+        margin-inline: auto;
+        overflow: none;
     }
 
-    .hero-1 .card figcaption div {
-        flex-direction: column;
-        align-items: stretch;
+    .temp-hero-desktop {
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        line-height: 0 !important;
+        font-size: 0 !important;
+        background-color: blue;
     }
 
-    .hero-1 .card figcaption button {
-        width: 100%;
+    /* Esconder o div pai quando todos os botões estão escondidos */
+    div:has(> .temp-hero-desktop) {
+        display: none !important;
     }
 
-    .card-foto-2col {
-        height: 320px;
-    }
+    
 }
 
 @media (max-width: 480px) {
     .hero-1 .card {
-        min-height: 480px;
+        min-height: 280px; /* Reduzido e flexível */
+        height: auto;
     }
 
     .hero-1 .card figcaption {
-        padding: 20px;
+        padding: 24px;
+        position: relative;
+        bottom: auto;
     }
 }
 
