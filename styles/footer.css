@@ -48,3 +48,44 @@ a {
     flex-direction: column;
 }
 
+@media (max-width: 1024px) {
+    #footer-flex {
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    #grp01,
+    #grp02,
+    #grp03 {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #grp01,
+    #grp02,
+    #grp03 {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #footer-flex {
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer-nav ul {
+        text-align: center;
+    }
+
+    #grp02,
+    #grp03 {
+        align-items: center;
+    }
+}

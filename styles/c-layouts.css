@@ -191,11 +191,74 @@
     }
      div:nth-child(12) {
         background-color: rgb(255, 0, 85);
-    }
+}
 
 }
 
 /* ----------- RESPONVIVO ------------ */
+
+@media (max-width: 1024px) {
+    .hero-1 {
+        margin-block: 32px;
+    }
+
+    .hero-1 .card figcaption {
+        padding: 32px;
+    }
+
+    .grid-cols-2,
+    .grid-cols-3,
+    .grid-cols-2-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .card-foto-2col {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-1 .card {
+        min-height: 520px;
+    }
+
+    .hero-1 .card::before {
+        top: 40%;
+    }
+
+    .hero-1 .card figcaption {
+        padding: 24px;
+        text-align: center;
+    }
+
+    .hero-1 .card figcaption h2,
+    .hero-1 .card figcaption div {
+        margin-top: 24px;
+    }
+
+    .hero-1 .card figcaption div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-1 .card figcaption button {
+        width: 100%;
+    }
+
+    .card-foto-2col {
+        height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-1 .card {
+        min-height: 480px;
+    }
+
+    .hero-1 .card figcaption {
+        padding: 20px;
+    }
+}
 
 
 @media (max-width: 768px) {

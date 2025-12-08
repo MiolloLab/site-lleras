@@ -132,3 +132,38 @@ main {
     overflow: hidden;
     height: 50vh;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        padding-inline: 32px;
+    }
+
+    :root {
+        --h1: 200 64px/110% var(--font-titles);
+        --h2: 600 28px/115% var(--font-titles);
+        --h3: 700 18px/130% var(--font-titles);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-inline: 24px;
+    }
+
+    :root {
+        --h1: 200 56px/115% var(--font-titles);
+        --h2: 600 26px/120% var(--font-titles);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-inline: 16px;
+    }
+
+    :root {
+        --h1: 200 42px/115% var(--font-titles);
+        --h2: 600 22px/125% var(--font-titles);
+        --text-copy: 400 15px/155% var(--font-copy);
+    }
+}
