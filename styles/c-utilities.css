@@ -84,9 +84,23 @@
     font-weight: 600;
 }
 
+.center-text {
+    text-align: center;
+}
+
 
 
 /* MARGIN */
+
+.margin-top-8 {
+    margin-top: 8px;
+}
+
+.margin-top-112 {
+    margin-top: 112px;
+}
+
+
 
 .margin-block-16 {
     margin-block: 16px;
@@ -96,9 +110,6 @@
     margin-block: 32px;
 }
 
-.margin-top-112 {
-    margin-top: 112px;
-}
 
 /* PADDING */
 

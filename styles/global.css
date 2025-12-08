@@ -22,7 +22,7 @@
 
     --h1: 200 80px/100% var(--font-titles);
     --h2: 600 32px/110% var(--font-titles);
-    --h3: 500 20px/150% var(--font-titles);
+    --h3: 700 20px/130% var(--font-titles);
     --text-span: 600 14px/145% var(--font-copy);
     --text-copy: 400 16px/145% var(--font-copy);
     --text-sm: 400 12px/160% var(--font-copy);
@@ -109,7 +109,26 @@ main {
     padding: 4px 12px;
     border-radius: 6px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+}
 
+/* CARDS */
+
+.card-full {
+    border-radius: 8px;
+    overflow: hidden;
+    img{ 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     
+    
+}
+
+
+.card-foto-2col {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 50vh;
 }
