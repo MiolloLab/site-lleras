@@ -76,15 +76,34 @@ button {
     border: none;
     border-radius: 4px;
     padding: 12px 24px;
-    background-color: var(--light-neutral-color-01);
+    background-color: var(--light-neutral-color-02);
     z-index: 1;
     cursor: pointer;
-    }
+    
+    a {
+        font: var(--text-bt);
+        }
+
+    a:hover {
+            color: inherit;
+    }       
+}
+
+button:hover {
+                background-color: var(--dark-neutral-color-01);
+                color: var(--light-neutral-color-01);
+            }
 
 
 .container {
     max-width: 1200px;
     padding-inline: 40px;
+    margin-inline: auto;
+}
+
+.container-no-pad {
+    max-width: 1120px;
+    /* padding-inline: 40px; */
     margin-inline: auto;
 }
 

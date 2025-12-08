@@ -96,18 +96,20 @@
     margin-top: 8px;
 }
 
-.margin-top-112 {
-    margin-top: 112px;
-}
-
-
-
 .margin-block-16 {
     margin-block: 16px;
 }
 
+.margin-top-48 {
+    margin-top: 48px;
+}
+
 .margin-block-32 {
     margin-block: 32px;
+}
+
+.margin-block-80 {
+    margin-block: 80px;
 }
 
 
@@ -124,6 +126,11 @@
 .pad-block-48 {
     padding-block: 48px;
 }
+
+.pad-block-64 {
+    padding-block: 64px;
+}
+
 
 
 

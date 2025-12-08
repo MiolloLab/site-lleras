@@ -264,18 +264,45 @@
         display: none !important;
     }
 
-    
-}
+    #por-que-melhorar { 
+    align-items: center;
+    background-color: blueviolet;
 
-@media (max-width: 480px) {
-    .hero-1 .card {
-        min-height: 280px; /* Reduzido e flexível */
-        height: auto;
+
     }
 
-    .hero-1 .card figcaption {
-        padding: 24px;
-        position: relative;
+    .grid-melhorar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+    
+
+
+@media (max-width: 480px) {
+    .grid-melhorar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        align-self: center;
+    }
+
+    /* Centraliza os filhos do grid pai */
+    .grid {
+        justify-items: center;
+        justify-content: center;
+    }
         bottom: auto;
     }
 }
