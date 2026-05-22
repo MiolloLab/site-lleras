@@ -2,23 +2,27 @@ footer {
     background-color: var(--secondary-color);
 }
 
-img {
+footer img {
     width: 80px;
+    object-fit: contain;
+    height: auto;
+}
+
+.logo-footer {
+    width: 80px;
+    height: auto;
     object-fit: contain;
 }
 
-ul {
-    li {
-        font: var(--text-sm);
-    }
-
-}
-
-p {
+footer ul li {
     font: var(--text-sm);
 }
 
-a {
+footer p {
+    font: var(--text-sm);
+}
+
+footer a {
     font: var(--text-sm);
 }
 
@@ -28,7 +32,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: end;
-
+    gap: 32px;
 }
 
 #grp01 {
@@ -41,11 +45,19 @@ a {
     font: var(--text-sm);
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+
+#grp02 a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 #grp03 {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
 @media (max-width: 1024px) {

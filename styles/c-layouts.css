@@ -1,19 +1,17 @@
 /* GRID */
 .teaser {
-    background-color: var(--light-neutral-color---);
+    background-color: var(--light-neutral-color-01);
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
     height: 100vh;
 
-
     img {
         width: 30%;
         height: auto;
         min-width: 300px;
         object-fit: contain;
-
     }
 
     h3 {
@@ -33,7 +31,6 @@
 
 .grid-cols-2 {
     grid-template-columns: repeat(2, 1fr);
-
 }
 
 .grid-cols-3 {
@@ -62,7 +59,6 @@
         object-fit: cover;
         position: absolute;
         inset: 0;
-        /* left: 200px; */
         z-index: 0;
     }
 
@@ -71,7 +67,7 @@
         width: 100%;
         object-fit: cover;
     }
-  
+
     .card {
         border-radius: 8px;
         position: relative;
@@ -79,7 +75,7 @@
 
         &::before {
             content: "";
-            position:absolute;
+            position: absolute;
             inset: 0;
             top: 50%;
             background-image: linear-gradient(
@@ -92,13 +88,12 @@
         figcaption {
             position: absolute;
             bottom: 0;
-
             padding: 48px;
 
             h2, button {
                 margin-top: 32px;
             }
-            
+
             div {
                 display: flex;
                 gap: 16px;
@@ -125,18 +120,16 @@
 
 }
 
-.grid-melhorar{
+.grid-melhorar {
     display: grid;
     height: 100%;
     width: 100%;
-    /* background-color: black; */
 
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
     align-content: space-between;
 
-    
     div:nth-child(1) {
         grid-column: 1 / 3;
     }
@@ -144,58 +137,10 @@
     div:nth-child(2) {
         grid-column: 1 / 3;
     }
-
-    & > div {
-        /* background-color: blue; */
-    }   
 }
 
-.grid-cols-12 {
-    display: grid;
-    height: 100%;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
 
-    div:nth-child(1) {
-        background-color: red;
-    }
-    div:nth-child(2) {
-        background-color: rgb(255, 145, 0);
-    }
-     div:nth-child(3) {
-        background-color: rgb(229, 255, 0);
-    }
-     div:nth-child(4) {
-        background-color: rgb(115, 255, 0);
-    }
-     div:nth-child(5) {
-        background-color: rgb(0, 255, 34);
-    }
-     div:nth-child(6) {
-        background-color: rgb(0, 255, 149);
-    }
-     div:nth-child(7) {
-        background-color: rgb(0, 195, 255);
-    }
-     div:nth-child(8) {
-        background-color: rgb(0, 132, 255);
-    }
-     div:nth-child(9) {
-        background-color: rgb(0, 38, 255);
-    }
-     div:nth-child(10) {
-        background-color: rgb(195, 0, 255);
-    }
-     div:nth-child(11) {
-        background-color: rgb(255, 0, 212);
-    }
-     div:nth-child(12) {
-        background-color: rgb(255, 0, 85);
-}
-
-}
-
-/* ----------- RESPONVIVO ------------ */
+/* ----------- RESPONSIVO ------------ */
 
 @media (max-width: 1024px) {
     .hero-1 {
@@ -219,31 +164,19 @@
 
 @media (max-width: 768px) {
     .hero-1 .card {
-        min-height: 300px; /* Reduzido para deixar mais flexível */
-        height: auto; /* Permite crescer com conteúdo */
+        min-height: 300px;
+        height: auto;
     }
 
     .hero-1 .card::before {
         top: 40%;
     }
 
-    .card {
-        margin-inline: auto;
-        padding-inline: auto;
-    }
-
     .hero-1 .card figcaption {
         padding: 24px;
         text-align: center;
-        position: relative; /* Muda para relative para não ocupar altura fixa */
+        position: relative;
         bottom: auto;
-    }
-
-    .hero-1 .card figcaption {
-        padding: 32px;
-        top: auto;
-        margin-inline: auto;
-        overflow: none;
     }
 
     .temp-hero-desktop {
@@ -256,64 +189,25 @@
         border: 0 !important;
         line-height: 0 !important;
         font-size: 0 !important;
-        background-color: blue;
     }
 
-    /* Esconder o div pai quando todos os botões estão escondidos */
     div:has(> .temp-hero-desktop) {
         display: none !important;
     }
 
-    #por-que-melhorar { 
-    align-items: center;
-    background-color: blueviolet;
-
-
-    }
-
     .grid-melhorar {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline: auto;
     }
 
-
-}
-
-    
-
-
-@media (max-width: 480px) {
-    .grid-melhorar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-        align-self: center;
-    }
-
-    /* Centraliza os filhos do grid pai */
-    .grid {
-        justify-items: center;
-        justify-content: center;
-    }
-        bottom: auto;
-    }
-}
-
-
-@media (max-width: 768px) {
     .teaser {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: auto; /* evita ocupar 100vh em telas pequenas */
+        height: auto;
         padding: 2rem 1rem;
         gap: 1.5rem;
     }
@@ -321,7 +215,7 @@
     .teaser img {
         width: 60%;
         height: auto;
-        min-width: 150px; /* reduz min-width em dispositivos menores */
+        min-width: 150px;
         object-fit: contain;
         margin: 0 auto;
     }
@@ -329,5 +223,17 @@
     .teaser h3 {
         text-align: center;
         padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-melhorar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        width: auto;
+        align-self: center;
     }
 }

@@ -96,6 +96,10 @@
     margin-top: 8px;
 }
 
+.margin-top-112 {
+    margin-top: 112px;
+}
+
 .margin-block-16 {
     margin-block: 16px;
 }
@@ -129,6 +133,53 @@
 
 .pad-block-64 {
     padding-block: 64px;
+}
+
+
+/* ====== RESPONSIVO — ESPAÇAMENTOS ====== */
+
+@media (max-width: 768px) {
+    .margin-block-80 {
+        margin-block: 40px;
+    }
+
+    .margin-top-112 {
+        margin-top: 40px;
+    }
+
+    .pad-block-64 {
+        padding-block: 40px;
+    }
+
+    .pad-block-48 {
+        padding-block: 32px;
+    }
+
+    .pad-line-48 {
+        padding-inline: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .margin-block-80 {
+        margin-block: 32px;
+    }
+
+    .margin-top-112 {
+        margin-top: 32px;
+    }
+
+    .pad-block-64 {
+        padding-block: 32px;
+    }
+
+    .pad-block-48 {
+        padding-block: 24px;
+    }
+
+    .pad-line-48 {
+        padding-inline: 16px;
+    }
 }
 
 

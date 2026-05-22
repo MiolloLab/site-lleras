@@ -1,42 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Conexão com Google Fonts para otimizar o carregamento das fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lleras Comunicação — Treinamento de voz, expressividade e presença para profissionais e líderes. Método personalizado conduzido por fonoaudióloga especializada.">
     <title>Lleras Comunicação</title>
     <link rel="stylesheet" href="./styles/index.css">
-
-    <!-- Carregar Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Carregar fontes do Google Fonts -->    
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
-
     <script type="module" src="./scripts/index.js" defer></script>
 </head>
 <body>
-    <!-- Checkbox invisível: controla abertura/fechamento do menu -->
     <header id="inicio" class="container">
         <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir/fechar menu">
-        
+
         <nav id="primary">
             <div>
                 <img class="logo-header" src="./assets/logo-lleras-horizontal.svg" alt="Logo da Lleras Comunicação">
             </div>
-            
-            <!-- Label que funciona como ícone do hambúrguer -->
+
             <label for="menu-toggle" class="hamburger-icon" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
         </nav>
-        
-        <!-- Menu de navegação (mostrado/escondido conforme checkbox) -->
+
         <nav id="secondary" class="pad-block-32">
             <ul>
                 <li><a href="#inicio">Início</a></li>
@@ -53,14 +45,12 @@
     </header>
 
     <main>
-        <section  class="container hero-1">
+        <!-- Seção 1. Hero -->
+        <section class="container hero-1">
             <figure class="card">
-                <!-- <img src="./assets/img/img-01-hero.png" alt="Imagem 01"> -->
-
                 <video class="video-background"
                     autoplay loop muted playsinline
                     poster="./assets/img/img-01-hero.png">
-
                     <source src="./assets/video/hero-01.mp4" type="video/mp4">
                     Seu navegador não suporta o elemento de vídeo.
                 </video>
@@ -69,7 +59,7 @@
                     <h1 class="t-claro-1">
                         Comunicação<br>é Presença
                     </h1>
-                    <h2 class="t-claro-2 temp-hero-desktop"">
+                    <h2 class="t-claro-2 temp-hero-desktop">
                         A sua voz precisa ser tão relevante <br> quanto a sua competência.
                     </h2>
 
@@ -80,12 +70,12 @@
                         <button class="temp-hero-desktop">
                             <a href="https://wa.me/5561991945778" target="_blank" rel="noopener noreferrer">Solicitar Proposta Corporativa</a>
                         </button>
-                    </div>                               
+                    </div>
                 </figcaption>
             </figure>
-            <div id="sub-textos-top" class=" grid grid-cols-2-1 gap-32 pad-line-48 ">
+            <div id="sub-textos-top" class="grid grid-cols-2-1 gap-32 pad-line-48">
                 <h3 class="t-escuro-1">
-                    Na Lleras, desenvolvemos a comunicação de líderes, executivos e profissionais que precisam se expressar com firmeza, autenticidade e clareza.br <br>
+                    Na Lleras, desenvolvemos a comunicação de líderes, executivos e profissionais que precisam se expressar com firmeza, autenticidade e clareza.<br><br>
                     Nosso método combina técnica vocal, autoconhecimento e expressividade para fortalecer sua presença em reuniões, entrevistas, apresentações ou conversas do dia a dia.
                 </h3>
                 <p class="t-claro-1">
@@ -94,16 +84,16 @@
             </div>
         </section>
 
-        <!-- Seção 2. Dor e Relevância (Por que sua comunicação importa) -->
+        <!-- Seção 2. Dor e Relevância -->
         <section id="por-que-melhorar" class="container grid grid-cols-2 gap-32 margin-block-80 pad-block-48 pad-line-48">
             <div class="card-only-pic">
-                <img src="./assets/img/detalhe-02-boca-apreensiva.png" alt="Imagem de detalhe de boca aprrensiva">
+                <img src="./assets/img/detalhe-02-boca-apreensiva.png" alt="Detalhe de rosto com expressão apreensiva, lábios levemente comprimidos">
             </div>
             <div class="grid-melhorar gap-16">
                 <div>
-                    <span class="text-sm wt-600  content-tag bc-accent">Realidade</span>
+                    <span class="text-sm wt-600 content-tag bc-accent">Realidade</span>
                     <h2>
-                      Você sabe o que quer dizer, mas nem sempre consegue dizer do <u>jeito certo </u>
+                        Você sabe o que quer dizer, mas nem sempre consegue dizer do <u>jeito certo</u>
                     </h2>
                 </div>
 
@@ -116,15 +106,14 @@
                 <div>
                     <h3>O silêncio</h3>
                     <p class="t-escuro-1">
-                       Você sente que sua comunicação não acompanha suas capacidades     
+                        Você sente que sua comunicação não acompanha suas capacidades.
                     </p>
                 </div>
                 <div>
                     <h3>A transformação</h3>
                     <p class="t-escuro-1">
-                       Você aprende a demonstrar suas reais habilidades por meio de treinamento.
+                        Você aprende a demonstrar suas reais habilidades por meio de treinamento.
                     </p>
-
                 </div>
             </div>
         </section>
@@ -132,9 +121,8 @@
         <!-- Seção 3. Autoridade e Credibilidade -->
         <section class="bc-claro-1 margin-block-80 pad-block-64">
             <div id="sobre-a-lleras" class="container gap-32 margin-top-112 pad-block-48 pad-line-48">
-            <!-- Conteúdo da seção Autoridade e Credibilidade -->
                 <div>
-                    <span class="text-sm wt-600  content-tag bc-accent">A abordagem</span>
+                    <span class="text-sm wt-600 content-tag bc-accent">A abordagem</span>
                     <h2>
                         Uma metodologia construída a partir de técnica, profundidade e experiência real
                     </h2>
@@ -146,75 +134,72 @@
                         </p>
                     </div>
                     <div class="margin-top-8">
-                        <div><span><img src="./assets/icons/Eye - 192x192.svg" alt="Ícone de olho"></img></span><span class="wt-600">Investigação das demandas</span></div>
-                        <div><span><img src="./assets/icons/Category - 192x192.svg" alt="Ícone de Categoria"></img></span><span class="wt-600">Técnica + Sensibilidade + Acolhimento</span></div>
-                        <div><span><img src="./assets/icons/Profile - 192x192.svg" alt="Ícone de Avatar"></img></span><span class="wt-600">Natália Lleras conduz cada processo</span></div>
+                        <div><span><img src="./assets/icons/Eye - 192x192.svg" alt="Ícone de investigação"></span><span class="wt-600">Investigação das demandas</span></div>
+                        <div><span><img src="./assets/icons/Category - 192x192.svg" alt="Ícone de metodologia"></span><span class="wt-600">Técnica + Sensibilidade + Acolhimento</span></div>
+                        <div><span><img src="./assets/icons/Profile - 192x192.svg" alt="Ícone de condução personalizada"></span><span class="wt-600">Natália Lleras conduz cada processo</span></div>
                     </div>
                 </div>
                 <div class="card-foto-2col">
-                    <img src="./assets/img/natalia-orientando-01.png" alt="">
+                    <img src="./assets/img/natalia-orientando-01.png" alt="Natália Lleras em sessão de orientação com cliente, ambiente acolhedor e profissional">
                 </div>
             </div>
         </section>
 
-        <!-- Seção 4. Como Funciona o Método (Processo de Transformação) -->
+        <!-- Seção 4. Como Funciona o Método -->
         <section class="pad-block-64 margin-block-80">
-        <!-- Conteúdo da seção Método -->
-         <div id="o-metodo" class="container gap-32 margin-top-112  pad-line-48">
-            <div>
-                <div class="center-text"><span class="text-sm wt-600  content-tag bc-accent">O processo</span></div>
-                <h2 class="t-claro-1">
-                    Clareza e Direcionamento<br>para transformar sua comunicação
-                </h2>
-                <p class="margin-top-8 t-claro-1">
-                    Três etapas que geram evolução concreta
-                </p>
-            </div>
-
-            <div>
-                <div><span><img src="./assets/icons/Search - 192x192.svg" alt="Ícone de olho"></img></span></div>
-                <h3>Diagnóstico completo</h3>
-                <p>Analisamos sua história, contexto e objetivos </p>
-            </div>
-
-            <div id="text-card-hor">
+            <div id="o-metodo" class="container gap-32 margin-top-112 pad-line-48">
                 <div>
-                    <p>Aplicação</p>
-                    <h3>Consolidação e <br>Prática Estratégica</h3>
-                    <p>
-                        Você aprende a aplicar em situações reais e desafiadoras
+                    <div class="center-text"><span class="text-sm wt-600 content-tag bc-accent">O processo</span></div>
+                    <h2 class="t-claro-1">
+                        Clareza e Direcionamento<br>para transformar sua comunicação
+                    </h2>
+                    <p class="margin-top-8 t-claro-1">
+                        Três etapas que geram evolução concreta
                     </p>
-                    <button>
-                        <a href="https://wa.me/5561991945778" target="_blank" rel="noopener noreferrer">Fale com a gente</a>
-                    </button>
                 </div>
-                <img src="./assets/img/natalia-orientando-03.png" alt="imagem de perfil de um rosto de uma pessoa falando">
-                
-            </div>
 
-            <div>
-                <div><span><img src="./assets/icons/Profile Circle - 192x192.svg" alt="Ícone de olho"></img></span></div>
-                <h3>Desenvolvimento personalizado</h3>
-                <p>Trabalhamos respiração, dicção, projeção e presença</p>
-            </div>
+                <div>
+                    <div><span><img src="./assets/icons/Search - 192x192.svg" alt="Ícone de busca e diagnóstico"></span></div>
+                    <h3>Diagnóstico completo</h3>
+                    <p>Analisamos sua história, contexto e objetivos.</p>
+                </div>
 
-         </div>
+                <div id="text-card-hor">
+                    <div>
+                        <p>Aplicação</p>
+                        <h3>Consolidação e <br>Prática Estratégica</h3>
+                        <p>
+                            Você aprende a aplicar em situações reais e desafiadoras.
+                        </p>
+                        <button>
+                            <a href="https://wa.me/5561991945778" target="_blank" rel="noopener noreferrer">Fale com a gente</a>
+                        </button>
+                    </div>
+                    <img src="./assets/img/natalia-orientando-03.png" alt="Natália Lleras em sessão de prática com profissional, trabalhando expressividade vocal">
+                </div>
+
+                <div>
+                    <div><span><img src="./assets/icons/Profile Circle - 192x192.svg" alt="Ícone de desenvolvimento pessoal"></span></div>
+                    <h3>Desenvolvimento personalizado</h3>
+                    <p>Trabalhamos respiração, dicção, projeção e presença.</p>
+                </div>
+
+            </div>
         </section>
 
-        <!-- Seção 5. Sessões Individuais (Oferta B2C) -->
+        <!-- Seção 5. Sessões Individuais (B2C) -->
         <section id="para-voce" class="bc-claro-2 pad-block-64 margin-block-80">
-        <!-- Conteúdo da seção Sessões Individuais -->
             <div id="individual" class="container-no-pad bc-claro-1">
                 <div>
-                    <img src="./assets/img/natalia-orientando-02.png" alt="">
+                    <img src="./assets/img/natalia-orientando-02.png" alt="Natália Lleras em sessão individual, escutando atentamente o cliente com postura receptiva">
                 </div>
 
                 <div id="infos-individual">
                     <div>
-                        <span class="text-sm wt-600  content-tag bc-accent">Individual</span>
-                    <h2>
-                    Sessões individuais para quem quer elevar sua comunicação ao próximo nível
-                    </h2>
+                        <span class="text-sm wt-600 content-tag bc-accent">Individual</span>
+                        <h2>
+                            Sessões individuais para quem quer elevar sua comunicação ao próximo nível
+                        </h2>
                     </div>
 
                     <div>
@@ -226,18 +211,18 @@
                     <div>
                         <h3>Profissional</h3>
                         <p>
-                            Comnicação clara e assertiva para ambientes corporativos
+                            Comunicação clara e assertiva para ambientes corporativos.
                         </p>
                     </div>
-                    
+
                     <div>
                         <h3>Vocal</h3>
                         <p>
-                            Expressividade e Projeção que transmitem segurança.
+                            Expressividade e projeção que transmitem segurança.
                         </p>
                     </div>
                     <div>
-                        <button class="">
+                        <button>
                             <a href="https://wa.me/5561991945778" target="_blank" rel="noopener noreferrer">Agendar</a>
                         </button>
                     </div>
@@ -247,25 +232,210 @@
             </div>
         </section>
 
-        <!-- Seção 6. Programas Corporativos (Oferta B2B) -->
-        <section id="para-empresas">
-        <!-- Conteúdo da seção Programas Corporativos -->
+        <!-- Seção 6. Programas Corporativos (B2B) -->
+        <section id="para-empresas" class="pad-block-64 margin-block-80">
+            <div id="empresas" class="container">
+                <div>
+                    <span class="text-sm wt-600 content-tag bc-accent">Corporativo</span>
+                    <h2>
+                        Soluções estratégicas de comunicação para líderes e equipes
+                    </h2>
+                    <p>
+                        A comunicação é um ativo corporativo que gera credibilidade.
+                    </p>
+                </div>
+
+                <div id="emp-col-left">
+                    <div>
+                        <p>Segurança</p>
+                        <h3>
+                            Porta-voz seguro para representar sua marca com consistência
+                        </h3>
+                    </div>
+
+                    <div>
+                        <img src="./assets/img/aluna-natasha-01-perfil.png" alt="Executiva com postura confiante e segura em ambiente corporativo, representando liderança comunicativa">
+                    </div>
+                </div>
+
+                <div id="emp-row-right">
+                    <div>
+                        <p>Voz e liderança</p>
+                        <h3>
+                            Desenvolvemos linguagem estratégica para times que representam empresas
+                        </h3>
+                    </div>
+
+                    <div>
+                        <img src="./assets/img/apresentacao-corporativa-01.jpg" alt="Profissional fazendo apresentação para equipe em sala de reunião, demonstrando presença e confiança ao falar">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <p>Workshop</p>
+                        <h3>Palestras e programas de desenvolvimento em grupo</h3>
+                        <p>Dinâmicas práticas que transformam a comunicação de equipes inteiras.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>Crise</p>
+                        <h3>Gestão da comunicação em situações críticas</h3>
+                        <p>Preparo técnico para que sua liderança mantenha a clareza quando mais importa.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Seção 7. Prova Social (Cases e Depoimentos) -->
-        <section id="resultados">
-        <!-- Conteúdo da seção Prova Social -->
+        <!-- Seção 7. Prova Social — Depoimentos -->
+        <section id="resultados" class="bc-claro-1">
+            <div id="resultados-inner" class="container pad-block-64 pad-line-48">
+                <div>
+                    <span class="text-sm wt-600 content-tag bc-accent">Resultados</span>
+                    <h2>O que muda quando você aprende a se comunicar de verdade</h2>
+                </div>
+
+                <div class="depoimentos-grid">
+                    <div class="card-depoimento">
+                        <blockquote>
+                            Passei anos me sentindo menor do que sou em reuniões. Depois do trabalho com a Natália, aprendi que não era falta de conteúdo — era falta de presença. Hoje falo em público, oriento minha equipe e me sinto confiante nas decisões difíceis.
+                        </blockquote>
+                        <cite>
+                            <div class="depoimento-autor">
+                                <img src="./assets/img/depoimento-camila-ferreira.jpg" alt="Mulher brasileira, 35–42 anos, cabelos escuros na altura dos ombros, sorriso confiante, fundo neutro, aparência executiva, foto profissional circular">
+                                <div>
+                                    <strong>Camila Ferreira</strong>
+                                    <span>Diretora de Operações</span>
+                                </div>
+                            </div>
+                        </cite>
+                    </div>
+
+                    <div class="card-depoimento">
+                        <blockquote>
+                            Minha voz tremia em apresentações importantes. Em dois meses de sessões, mudei minha respiração, minha postura vocal e minha segurança. A transformação foi visível para todo mundo ao redor.
+                        </blockquote>
+                        <cite>
+                            <div class="depoimento-autor">
+                                <img src="./assets/img/depoimento-pedro-menezes.jpg" alt="Homem brasileiro, 30–38 anos, cabelos curtos escuros, expressão calma e segura, camisa social, fundo neutro, foto profissional circular">
+                                <div>
+                                    <strong>Pedro Menezes</strong>
+                                    <span>Gerente de Projetos</span>
+                                </div>
+                            </div>
+                        </cite>
+                    </div>
+
+                    <div class="card-depoimento">
+                        <blockquote>
+                            O processo da Natália vai muito além da técnica. Ela entende quem você é e trabalha a partir daí. Nunca me senti tão inteira quando falo — nas audiências, nas reuniões, no dia a dia.
+                        </blockquote>
+                        <cite>
+                            <div class="depoimento-autor">
+                                <img src="./assets/img/depoimento-ana-clara-souza.jpg" alt="Mulher brasileira, 28–36 anos, cabelos cacheados médios, expressão serena e inteligente, blazer discreto, fundo neutro, foto profissional circular">
+                                <div>
+                                    <strong>Ana Clara Souza</strong>
+                                    <span>Consultora Jurídica</span>
+                                </div>
+                            </div>
+                        </cite>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Seção 8. Conteúdos e Valor (Educação e Autoridade) -->
+        <!-- Seção 8. Conteúdos e Valor -->
         <section id="conteudos">
-        <!-- Conteúdo da seção Conteúdos -->
+            <div id="conteudos-inner" class="container pad-block-64 pad-line-48">
+                <div>
+                    <div class="conteudos-header-text">
+                        <span class="text-sm wt-600 content-tag bc-accent">Conteúdos</span>
+                        <h2>Aprenda a se comunicar melhor, todo dia</h2>
+                        <p class="margin-top-8">Reflexões, exercícios e perspectivas sobre voz, presença e expressão autêntica.</p>
+                    </div>
+                    <div>
+                        <button>
+                            <a href="https://www.instagram.com/lleras.comunica/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i> Seguir no Instagram
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="conteudos-grid">
+                    <div class="card-conteudo">
+                        <div class="card-conteudo-img">
+                            <img src="./assets/img/conteudo-voz-nervosismo.jpg" alt="Pessoa respirando fundo antes de uma apresentação, olhos fechados, postura centrada e consciente">
+                        </div>
+                        <div class="card-conteudo-body">
+                            <span class="text-sm wt-600 content-tag bc-accent">Voz</span>
+                            <h3>Por que sua voz muda quando você está nervoso</h3>
+                            <p>Entenda o que acontece no seu corpo sob pressão e como treinar para manter a presença.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-conteudo">
+                        <div class="card-conteudo-img">
+                            <img src="./assets/img/conteudo-escuta-ativa.jpg" alt="Duas pessoas em conversa intensa, uma delas ouvindo com atenção plena e contato visual genuíno">
+                        </div>
+                        <div class="card-conteudo-body">
+                            <span class="text-sm wt-600 content-tag bc-accent">Presença</span>
+                            <h3>Ouvir bem é metade da comunicação</h3>
+                            <p>Líderes que comunicam com impacto não são apenas bons falantes — são ouvintes excepcionais.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-conteudo">
+                        <div class="card-conteudo-img">
+                            <img src="./assets/img/conteudo-exercicio-dicao.jpg" alt="Pessoa praticando exercícios de dicção em frente ao espelho, com expressão de concentração e foco">
+                        </div>
+                        <div class="card-conteudo-body">
+                            <span class="text-sm wt-600 content-tag bc-accent">Prática</span>
+                            <h3>3 exercícios para melhorar sua dicção em 10 minutos por dia</h3>
+                            <p>Técnicas simples e eficazes que qualquer profissional pode incluir na rotina.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Seção 9. CTA Final (Encerramento Direto) -->
+        <!-- Seção 9. CTA Final -->
         <section id="contato">
-        <!-- Conteúdo da seção CTA Final / Contato -->
-        </section>    
+            <div id="contato-inner" class="container pad-line-48">
+                <div>
+                    <span class="text-sm wt-600 content-tag bc-accent">Próximo passo</span>
+                    <h2>Pronto para ser ouvido como você merece?</h2>
+                    <p>
+                        Cada processo começa por uma conversa. Sem compromisso, sem fórmulas prontas — só clareza sobre o que você precisa e como podemos chegar lá juntos.
+                    </p>
+                </div>
+
+                <div class="contato-btns">
+                    <button class="btn-primary">
+                        <a href="https://wa.me/5561991945778" target="_blank" rel="noopener noreferrer">Agendar Sessão Individual</a>
+                    </button>
+                    <button>
+                        <a href="https://wa.me/5561991945778" target="_blank" rel="noopener noreferrer">Solicitar Proposta Corporativa</a>
+                    </button>
+                </div>
+
+                <div class="contato-diferenciais">
+                    <div>
+                        <span class="icon"><i class="fas fa-microscope"></i></span>
+                        <p>Fonoaudióloga especializada</p>
+                    </div>
+                    <div>
+                        <span class="icon"><i class="fas fa-fingerprint"></i></span>
+                        <p>Método 100% personalizado</p>
+                    </div>
+                    <div>
+                        <span class="icon"><i class="fas fa-balance-scale"></i></span>
+                        <p>Perita da Justiça</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="margin-top-112">
@@ -285,7 +455,7 @@
                             <li><a href="#contato">Contato</a></li>
                         </ul>
                     </nav>
-                </div>  
+                </div>
             </div>
 
             <div>
@@ -294,9 +464,9 @@
 
             <div id="grp02" class="t-claro-2">
                 <div>
-                    <a href="https://www.instagram.com/fononatlleras/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/lleras.comunica/" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-instagram"></i>
-                        <span> Instagram</span>
+                        <span>Instagram</span>
                     </a>
                 </div>
                 <div>
@@ -308,10 +478,9 @@
             </div>
 
             <div id="grp03" class="t-claro-2">
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Uso</a>
+                <a href="./politica-de-privacidade.html">Política de Privacidade</a>
+                <a href="./termos-de-uso.html">Termos de Uso</a>
             </div>
-
 
             <div>
                 <p class="t-claro-2">
